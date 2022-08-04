@@ -67,12 +67,12 @@ void setup()
   CountReset.SetRandomCycle(RandomCycle);
 
   //  カラーセンサーが正常に動作するか
- /* if (tcs.begin()) {
+  if (tcs.begin()) {
     Serial.println("Found sensor");
   } else {
     Serial.println("No TCS34725 found ... check your connections");
     while (1);
-  }*/
+  }
 
   // timer1を周波数を更新するために使用
   sr.interrupt(ShiftRegisterPWM::UpdateFrequency::Medium);
